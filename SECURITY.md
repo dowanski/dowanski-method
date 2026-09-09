@@ -6,9 +6,9 @@ provide a hosted service.
 
 ## Reporting
 
-When the public GitHub repository is created, enable GitHub private
-vulnerability reporting before inviting security reports. Until that private
-route is confirmed, contact `dowanski@pm.me` with a minimal description and no
+Use the repository's Security tab to submit a private vulnerability report
+when that option is available. Otherwise, contact `dowanski@pm.me` with a
+minimal description and no
 credentials, private keys, customer data, or unnecessary exploit material.
 
 Do not open a public issue for a vulnerability that could expose a real system
