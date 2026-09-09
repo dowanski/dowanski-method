@@ -192,7 +192,9 @@ reset:
 5. update the Active Packet with one lane and return point;
 6. record remaining required acceptance and the next human gate;
 7. remove closed material from default routing;
-8. confirm that a fresh agent can resume without the conversation transcript.
+8. check resumption from the routed files, not the conversation transcript,
+   using the review depth defined in the
+   [Cleanup Checkpoint](qdi/CONTEXT_CLEANUP_CHECKPOINT.md).
 
 ## Coordination discipline
 

@@ -28,6 +28,8 @@ Decision ID: `{{ALLOCATED_QDI_CYCLE_DECISION_ID}}`
 
 - Recommended decision: `{{PROCEED_CONTINUE_REDIRECT_DEFER_STOP}}`
 - Reason: `{{WHY}}`
+- Readiness boundary: `{{WHAT_IS_SUPPORTED_NOW_AND_WHAT_IS_NOT}}`
+- Remaining research: `{{DECISION_GAP_OWNER_AND_GATE_OR_NONE}}`
 - Strongest alternative: `{{ALTERNATIVE_AND_TRADEOFF}}`
 - Candidate later DM weight: `{{LIGHT_STANDARD_GOVERNED_UNDETERMINED}}`
 - Implementation authority: `Not created`

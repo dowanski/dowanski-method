@@ -1,67 +1,55 @@
 # QDI Active Packet
 
-Status: Active  
-Phase: `SEED`  
-QDI level: `Project QDI`  
+Status: Active
+Phase: `SEED`
+QDI level: `Project QDI`
 Owner: `{{OWNER_OR_ROLE}}`
 
 ## Objective
 
-Confirm where the QDI records will live, receive the idea in the human's own
-language, and establish how the discovery conversation should run.
+Establish storage/access, receive the idea or existing plan, and agree how the
+discovery conversation should run.
 
 ## Inherited truth
 
-- No project thesis has been accepted.
-- No solution, stack, scope, timeline, or implementation authority exists.
-- No repository inspection, commit, push, or publication authority exists.
+No project thesis, solution, stack, scope, timeline, or implementation authority
+is accepted. Repository inspection, commit, push, and publication are unauthorized.
 
 ## Current position
 
-- Active anchor: `01 — Seed`
-- Session mode: `Unselected`
+- Active coverage: `01 — Seed`
+- Collaboration/delivery: use Current State's accepted preferences.
 - Last accepted answer: `None`
 - Return point: `This packet`
 
-## Ask now
+## Opening action
 
-1. Confirm or help select standalone local, repository-contained, or hybrid
-   storage and record repository access and sharing boundaries.
-2. Give the one-time context and token stewardship explanation.
-3. Briefly explain the QDI discovery-only boundary.
-4. Ask whether the human prefers Guided or Grouped questioning.
-5. Ask: “In your own words, what idea, problem, opportunity, or change are we
-   exploring?”
+Follow AGENTS' new-session opening and the Discovery Anchors' Opening contract.
+Establish storage and permissions; explain stewardship/discovery boundaries
+once; offer A–D collaboration and delivery preferences; reuse supplied context;
+reflect intent separately from hypotheses.
 
 ## Permitted actions
 
-- Explain QDI.
-- Explain the three storage choices and recommend hybrid by default.
-- Explain how the packet restrains unnecessary context, repetition, and
-  unchanged retries without waiving quality gates.
-- Ask and reflect the opening questions.
-- Update the QDI records.
-- Recommend a mode if the human is unsure.
+Explain QDI and storage choices, recommend hybrid storage or a conversation
+approach, ask and reflect seed questions, and maintain authorized QDI records.
 
 ## Prohibited actions
 
-- Do not propose a stack or architecture.
-- Do not implement the idea.
-- Do not launch external research without a defined sidequest and human
-  authorization where required.
-- Do not treat the seed explanation as validated market or technical evidence.
+Do not choose architecture or implement. Research requires scope/authority:
+routine checks can use existing bounded permission; dedicated research needs
+an accepted sidequest. The seed does not validate market or technical claims.
 
 ## Exit condition
 
-The human confirms the storage boundary and agent's restatement of the seed, and
-a session mode is recorded.
+Storage, collaboration/delivery, and the seed restatement are confirmed.
 
 ## On exit
 
-Update the Discovery Ledger and Current State. Change the phase to
-`ANCHOR_DISCOVERY`, name the next uncovered anchor, and rewrite this packet for
-that one active lane.
+Update Ledger and Current State. Change to `ANCHOR_DISCOVERY`, name the next
+consequential question, inspection, research proposal, or recommendation, and
+rewrite this packet for that one permitted lane.
 
 ## Next human gate
 
-Confirmation that the opening restatement preserves the human's intent.
+Confirm that the restatement preserves the human's intent.

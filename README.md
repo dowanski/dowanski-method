@@ -10,14 +10,21 @@ Built from Dowanski's working practice and shared so you can inspect it, adapt
 it, and improve your own workflow. It is a method to try, not a claim that every
 project or agent should work the same way.
 
-**Current edition:** [v0.2.0 — release notes and downloads](https://github.com/dowanski/dowanski-method/releases/tag/v0.2.0).
+**Current edition:** [v0.3.0 — Adaptive Discovery](https://github.com/dowanski/dowanski-method/releases/tag/v0.3.0).
+
+Choose how you want to work with your agent, build on what you already know,
+and explore useful research together. This edition adds four collaboration
+choices, three research levels, and clearer guidance on when to move forward.
+See [what changed and why](CHANGELOG.md).
+The [previous v0.2.0 edition](https://github.com/dowanski/dowanski-method/releases/tag/v0.2.0)
+remains available with its original downloads.
 
 ## Start here
 
 If you are reading the source repository, open [the complete starter](starter/README.md).
 Keep it in a separate private folder or a deliberately isolated project path;
 do not replace an existing project's instructions. The
-**[Complete starter ZIP](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/dowanski-method-complete-v0.2.0.zip)**
+**[Complete starter ZIP](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/dowanski-method-complete-v0.3.0.zip)**
 is the recommended download.
 
 Open the starter folder in a compatible agent environment with local-file
@@ -60,17 +67,17 @@ includes all three **inactive** foundations. After discovery and approval, the
 agent adapts one. Advanced direct downloads omit QDI and require an already
 established project context and authority.
 
-## Downloads — v0.2.0
+## Downloads — v0.3.0
 
 | Package | Files | Use |
 |---|---:|---|
-| [Complete starter](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/dowanski-method-complete-v0.2.0.zip) | 96 | Recommended: QDI first, with three inactive foundations |
-| [Light](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/dowanski-method-light-v0.2.0.zip) | 14 | Advanced direct foundation; omits QDI |
-| [Standard](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/dowanski-method-standard-v0.2.0.zip) | 26 | Advanced direct foundation; omits QDI |
-| [Governed](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/dowanski-method-governed-v0.2.0.zip) | 34 | Advanced direct foundation; omits QDI |
+| [Complete starter](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/dowanski-method-complete-v0.3.0.zip) | 96 | Recommended: QDI first, with three inactive foundations |
+| [Light](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/dowanski-method-light-v0.3.0.zip) | 14 | Advanced direct foundation; omits QDI |
+| [Standard](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/dowanski-method-standard-v0.3.0.zip) | 26 | Advanced direct foundation; omits QDI |
+| [Governed](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/dowanski-method-governed-v0.3.0.zip) | 34 | Advanced direct foundation; omits QDI |
 
 Counts include bundled license/version notices, not daily reading requirements.
-[SHA-256 checksums](https://github.com/dowanski/dowanski-method/releases/download/v0.2.0/SHA256SUMS.txt)
+[SHA-256 checksums](https://github.com/dowanski/dowanski-method/releases/download/v0.3.0/SHA256SUMS.txt)
 cover the four ZIPs. GitHub's generated **Source code** download contains the
 maintainer repository; use **Complete starter** for the ready-to-adopt packet.
 
