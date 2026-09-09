@@ -18,6 +18,10 @@ Do not concatenate branch reports. Reconcile conflicts among product, market,
 brand, technical, data, operations, and acceptance directions before presenting
 this blueprint.
 
+Integrate material findings as discovery develops; do not wait for 33 spoken
+answers. Recommend review when the next bounded commitment is sufficiently
+supported, explaining remaining uncertainty and why it does or does not block.
+
 ## 01 — Project thesis and intended change
 
 - Project thesis: `{{ONE_COHERENT_STATEMENT}}`

@@ -42,3 +42,8 @@ It does not call an AI model or prove that an agent will obey the written rules.
 It is not an exhaustive secret scanner, legal review, or security certification.
 Human semantic review remains required for instruction changes. See
 [verification and limits](../guides/verification.md).
+
+The v0.3.0 edition adds written-contract checks for adaptive discovery and
+thirteen corresponding fault injections. The opening budget now also includes
+the conditionally selected Opening contract and first seed, not just the six
+startup/storage files. These are routing/text checks, not conversation tests.

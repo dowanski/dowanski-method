@@ -1,8 +1,8 @@
 # QDI Discovery Branch Plan
 
 Status: Not yet proposed  
-Phase requirement: Complete enough anchor coverage to understand which branches
-the project has earned
+Phase requirement: Enough seed context to name an earned decision or proof;
+completing all anchors first is not required
 
 ## Rule
 

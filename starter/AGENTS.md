@@ -61,19 +61,19 @@ router defines phase transitions, recovery, and conditional modules.
 For an untouched packet:
 
 1. Use the installation guide to establish storage and access boundaries.
-2. Explain once: “I will keep the active context focused, avoid repeating
-   accepted history, and stop unchanged retries. I will explain the purpose and
-   stopping point of expensive work. I will report real usage only when the
-   environment exposes it, distinguish account usage from this task, and say
-   when exact usage is unavailable. Efficiency never removes required quality,
-   evidence, safety, accessibility, authority, or human review.”
+2. Explain once in the human’s preferred language: “I will keep notes focused,
+   stop repetitive work, and explain expensive work and its stopping point.
+   I can report exact usage only when the tool provides it; account totals are
+   not this task’s usage. Efficiency never removes required quality, evidence,
+   safety, accessibility, permission, or human review.”
 3. Explain that QDI begins with discovery and creates no implementation authority.
-4. Offer **Guided** questions one at a time or **Grouped** questions in batches
-   of three to six; the human can switch or request a recommendation.
-5. Ask Anchor 01: “In your own words, what idea, problem, opportunity, or change
-   are we exploring?”
-6. Record the answers, confirm your interpretation, and follow the seed exit
-   gate before continuing.
+4. Use the Discovery Anchors' Opening contract to offer A–D collaboration
+   approaches and one-at-a-time or grouped delivery. Reuse preferences already
+   supplied; do not turn orientation into a configuration interview.
+5. Receive the idea or existing plan in the human's own words; do not ask them
+   to repeat supplied context. Ask only what is needed to understand the seed.
+6. Record preferences, reflect intent separately from hypotheses, and obtain
+   seed confirmation before recommending the next consequential move.
 
 Recommend Guided for unfamiliar, consequential, emotional, or contradictory
 questions; Grouped suits familiar factual context. Isolate a question that could
@@ -81,32 +81,37 @@ materially change scope, authority, safety, or direction.
 
 ## Questioning and evidence
 
-Use the 33 anchors as coverage responsibilities. Credit established answers,
-ask natural open questions, and reflect meaning before reframing it. Do not
-combine questions whose answers may differ. Offer choices only when the context
-supports them, always allowing the human to amend, combine, reject, or answer
-outside those choices.
+Use the 33 anchors as backstage coverage, never a sequential interview.
+The [Discovery Anchors](qdi/DISCOVERY_ANCHORS.md) guide defines the next-move and research selection rules.
+Credit supplied context and sourced findings across all relevant anchors.
+Ask the human for intent or decisions; inspect authorized project facts;
+research external unknowns; offer reasoned recommendations. Keep inference
+distinct from verified fact. Do not repeat resolved questions.
 
-After a material answer, check meaning, evidence classification, contradiction,
-dependencies, authority, branch triggers, and depth. Ask a follow-up when it
-improves a decision, boundary, feasibility, proof, or handoff. Otherwise record
-the result and advance. Periodically invite corrections.
+After a material answer, check understanding, contradiction, consequence,
+authority, and readiness. Explain the next useful question or investigation
+briefly, rather than lecturing or offering research after every answer. Choose
+Light Scan, Standard Research, or Deep Research for the evidence needed, not
+elapsed time. Recommend convergence when enough is known for a bounded next
+commitment; do not pursue exhaustive certainty.
 
 The [Ledger](qdi/DISCOVERY_LEDGER.md) defines answer classifications. Preserve
 uncertainty: owner confirmation establishes accepted direction, not the truth
 of an external claim. Never upgrade an assumption or inference to verified fact
 without evidence.
 
-Use the lens router once the work can be classified. Activate only relevant
-lenses and ask only for gaps. A new question must name its triggering answer,
-risk, contradiction, or unknown and the decision it supports. Record whether it
-is asked now, researched, deferred, or blocking.
+Use relevant lenses once the work can be classified. Each new question must
+support a decision, risk, contradiction, or consequential gap. Record whether
+it is asked, researched, deferred, or blocking. Record material discoveries
+within agreed storage authority without asking permission for each routine
+note. Human acceptance concerns direction, not whether findings are saved.
 
-A specialist branch must earn its place through a named decision or proof.
-Follow the Branch Plan's owner gate before activation. Use a sidequest for a
-consequential unknown that conversation cannot resolve; establish its scope,
-evidence, authority, stopping condition, and exact return point before leaving.
-On return, integrate findings and resume that point.
+Branches and dedicated sidequests require a named decision and accepted scope;
+follow their owner gates. Routine bounded checks may use existing read-only
+authority without creating a packet. Collaboration approach never grants
+research, spending, account, or implementation authority. If tools or evidence
+are unavailable, state the limit. On return, integrate sourced findings,
+resolve affected anchors, recommend a direction, and resume the saved point.
 
 ## Levels and depth
 

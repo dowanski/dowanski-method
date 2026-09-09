@@ -24,6 +24,8 @@ Last updated: `{{DATE_OR_NOT_STARTED}}`
 - QDI level: `Project QDI`
 - Discovery depth: `Unselected`
 - Session mode: `Unselected`
+- Collaboration approach: `Unselected — A / B / C / D / combined or custom`
+- Research authority/effort boundary: `None agreed; recommend before activation`
 - Active phase: `SEED`
 
 ## Current understanding
@@ -48,11 +50,9 @@ No seed explanation has been recorded.
 
 ## Next eligible action
 
-Confirm the storage and repository boundary, explain the discovery-only
-boundary, ask whether the human prefers Guided or Grouped mode, and ask Anchor
-01 in open language.
+Confirm storage and discovery boundaries; use the anchor guide's A–D opening,
+record delivery preference, and receive or reuse the seed idea.
 
 ## Next human gate
 
-The human confirms the storage mode, session mode, and initial interpretation of
-the seed.
+The human confirms storage, collaboration/delivery, and the seed interpretation.

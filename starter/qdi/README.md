@@ -1,6 +1,7 @@
 # QDI Router
 
-Status: Starter state  
+Status: Routing reference
+
 Purpose: Select the smallest sufficient context for the current action
 
 ## Resume route
@@ -19,8 +20,8 @@ Active Packet together when the phase changes.
 
 | Phase | Read for this action | Advance when / next route |
 |---|---|---|
-| `SEED` | [Discovery Anchors](DISCOVERY_ANCHORS.md), Anchor 01 | Storage bounded, mode recorded, human confirms seed → `ANCHOR_DISCOVERY` |
-| `ANCHOR_DISCOVERY` | [Discovery Anchors](DISCOVERY_ANCHORS.md), next uncovered anchor | Broad coverage reveals earned decisions → `BRANCH_PLANNING`; no earned branch → `CONVERGENCE` |
+| `SEED` | [Discovery Anchors](DISCOVERY_ANCHORS.md), Opening contract and seed | Storage bounded, collaboration/delivery recorded, human confirms seed → `ANCHOR_DISCOVERY` |
+| `ANCHOR_DISCOVERY` | [Discovery Anchors](DISCOVERY_ANCHORS.md), next-move rules and relevant coverage only | A consequential branch is earned → `BRANCH_PLANNING`; readiness supported → `CONVERGENCE`; otherwise continue the useful gap |
 | `BRANCH_PLANNING` | [Branch Plan](BRANCH_PLAN.md), [Lens router](lenses/README.md) | Human accepts branch scope and order → `SPECIALIST_DISCOVERY`; none earned → `CONVERGENCE` |
 | `SPECIALIST_DISCOVERY` | [Branch Plan](BRANCH_PLAN.md), selected section of [Specialist Guide](SPECIALIST_BRANCH_GUIDE.md), one active branch packet | Named proof/decision complete → cleanup, then next approved branch or `CONVERGENCE` |
 | `SIDEQUEST_ACTIVE` | One named active packet created from [Sidequest Template](SIDEQUEST_TEMPLATE.md) | Results integrated and cleanup accepted → exact saved phase and return point |
@@ -30,8 +31,8 @@ Active Packet together when the phase changes.
 | `DEFERRED` | Current State and Active Packet only | Recorded restart condition and human direction → named phase |
 | `STOPPED` | Current State and the recorded stop decision only | Human explicitly reopens → linked successor cycle |
 
-Do not read every row. An incomplete anchor count alone neither blocks nor
-proves convergence; material coverage, evidence, and remaining risks decide.
+Do not read every row or ask anchors in order. Supplied context and research
+can resolve several anchors. Material evidence and risk—not count—decide readiness.
 
 ## Conditional event routes
 
@@ -42,7 +43,7 @@ Events supplement the active phase; they do not silently replace it.
 | Storage/access unselected or changing | [Installation](../INSTALLATION_AND_STORAGE.md) | Record boundary; return to active phase |
 | Record answer, evidence, correction, contradiction, or decision | [Discovery Ledger](DISCOVERY_LEDGER.md), classification rules and relevant entry only | Record once; history outside default route |
 | Classify work or check domain gaps | [Lens router](lenses/README.md), only relevant lenses | Return to active question/branch; other lenses stay inactive |
-| Consequential unknown needs bounded research | [Sidequest Template](SIDEQUEST_TEMPLATE.md) | Save phase and exact return point before activation; obtain needed authority |
+| Dedicated research earned under the anchor guide's level rules | [Sidequest Template](SIDEQUEST_TEMPLATE.md) | Save phase/return point; accept scope, level, effort, and authority; integrate before returning |
 | Allocate/resolve/move a durable ID; full cleanup or handoff | [Record Index](QDI_RECORD_INDEX.md) | Return to triggering action; ordinary questions do not receive IDs |
 | Close sidequest/branch; before review, handoff, or child cycle; documentation drag | [Cleanup Checkpoint](CONTEXT_CLEANUP_CHECKPOINT.md) | Accept reduced route; return to next eligible phase |
 | Report usage; plan expensive work; diagnose retry/reading loops; prepare complex resumption or coordination | [Stewardship policy](../CONTEXT_AND_TOKEN_STEWARDSHIP.md), relevant sections | Keep persistent rules in AGENTS; detailed history becomes reference after resolution |

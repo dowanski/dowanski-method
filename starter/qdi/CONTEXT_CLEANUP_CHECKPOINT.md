@@ -32,6 +32,13 @@ Run a contained checkpoint:
 Sidequest and branch checkpoints may be brief. The pre-handoff checkpoint must
 review the complete active QDI route.
 
+A contained close uses the coordinator's recorded route-only self-review below;
+it does not require another agent merely because a small investigation ended.
+Independent resumption review is required before cycle-level Owner Review or
+handoff, and after material routing/authority conflicts or recovery failures.
+Human acceptance remains required; combine a contained cleanup review with the
+substantive return decision when practical, rather than creating another meeting.
+
 ## Documentation-drag and bad-loop signals
 
 Mark every signal observed:
@@ -169,10 +176,22 @@ active owner-approved record explicitly readopts it.
 Do not use a broad directory, unresolved variable, or pattern as a deletion
 target. If scope is uncertain, leave the material intact and ask.
 
-## Fresh-agent resumption test
+## Resumption check — proportionate, with recorded evidence
 
-Give a compatible agent only the proposed active route. Without reading the
-archive or relying on chat memory, confirm that it can state:
+For a contained sidequest/branch close with no material routing or authority
+conflict, inspect the proposed active route against the checklist below yourself.
+Record `Coordinator route-only self-review`, the files inspected, result, and
+remaining limits. Do not call that an independent or fresh-agent test.
+
+For cycle-level review, pre-handoff acceptance, or a material route/authority
+repair, obtain an authorized independent resumption check. If another compatible
+agent is unavailable or its use is not authorized, keep that required check
+pending and report the blocker; do not substitute self-review as an independent
+pass or start another agent without permission.
+
+For an independent check, give the reviewer only the proposed active route.
+For either kind of check, establish the following from those routed files,
+not from chat memory or the archive:
 
 - [ ] what the human is trying to accomplish;
 - [ ] what is currently accepted and how it is known;
@@ -197,7 +216,9 @@ loading the entire archive.
 - Handoff candidate set prepared: `Yes / No / Not this checkpoint scope`
 - Archive and reference destinations named: `Yes / No`
 - Redundant removal authorized: `Yes / No / None proposed`
-- Fresh-agent resumption test: `Pass / Fail / Pending named review`
+- Review kind: `Coordinator route-only self-review / Independent resumption check`
+- Independent check required: `Yes / No — scope and reason`
+- Resumption result and evidence: `Pass / Fail / Pending named review; inspected route and limits`
 - Human decision: `Pending`
 - Remaining concern: `{{CONCERN_OR_NONE}}`
 
@@ -211,7 +232,8 @@ The checkpoint closes only when:
 4. archives and references are removed from default routing;
 5. no deletion occurred without exact human authority;
 6. the handoff candidate set excludes raw and unapproved material;
-7. a fresh agent can resume without reading the complete history;
+7. the required resumption check passes; self-review is not labeled independent,
+   and a required independent check is not waived;
 8. the QDI Record Index has no collision, broken active path, reused ID, or
    missing successor relationship;
 9. unchanged retries and unbounded high-effort lanes are stopped or justified;

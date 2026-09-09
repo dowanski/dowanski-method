@@ -49,6 +49,8 @@ Do not maintain this snapshot as a second live status table.
 | QDI commit or push authority | Not authorized |
 | QDI level | Project QDI |
 | Session mode | Unselected |
+| Collaboration approach | Unselected |
+| Agreed research boundaries | None |
 | Discovery depth | Unselected |
 | Active phase | SEED |
 | Last human confirmation | None |

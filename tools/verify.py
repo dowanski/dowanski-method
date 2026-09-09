@@ -58,6 +58,64 @@ def link_errors(files):
     return errors
 
 
+def opening_word_count(files):
+    total = sum(len(files[p].split()) for p in BOOT + ["INSTALLATION_AND_STORAGE.md"])
+    anchors = files.get("qdi/DISCOVERY_ANCHORS.md", "")
+    opening = section(anchors, "Opening contract")
+    seed = re.search(r"### 01 — Seed\n(.*?)(?=\n### )", anchors, flags=re.S)
+    return total + len(opening.split()) + (len(seed[1].split()) if seed else 0)
+
+
+def adaptive_discovery_errors(files):
+    """Selected written-contract checks, not a model-behavior evaluation."""
+    errors = []
+    required = {
+        "qdi/DISCOVERY_ANCHORS.md": (
+            "A) **Guide me through it**",
+            "B) **Work alongside me**",
+            "C) **Take the research and planning lead**",
+            "D) **Challenge my existing plan**",
+            "Light Scan", "Standard Research", "Deep Research",
+            "not a spoken checklist",
+            "Approach C is not that authorization",
+            "If research tools are unavailable",
+            "not daily context",
+            "Remaining uncertainties need an owner, impact, and gate",
+        ),
+        "qdi/CURRENT_STATE.md": ("Collaboration approach:", "Research authority/effort boundary:"),
+        "qdi/SIDEQUEST_TEMPLATE.md": (
+            "Research level:", "Saved phase:", "Exact return point:",
+            "Approved effort/time boundary:", "Tool availability checked:",
+            "Coverage resolved without re-questioning", "Prior authorization, if applicable:",
+            "At the boundary, stop and report",
+        ),
+        "AGENTS.md": (
+            "never a sequential interview", "Routine bounded checks",
+            "Human acceptance concerns direction",
+        ),
+        "qdi/CONTEXT_CLEANUP_CHECKPOINT.md": (
+            "Coordinator route-only self-review",
+            "Independent resumption review is required before cycle-level Owner Review",
+            "do not substitute self-review as an independent pass",
+            "Human acceptance remains required",
+        ),
+    }
+    for path, phrases in required.items():
+        normalized = " ".join(files.get(path, "").split())
+        for phrase in phrases:
+            if phrase not in normalized:
+                errors.append(f"Adaptive discovery contract missing: {path}: {phrase}")
+    for path in ("qdi/README.md", "qdi/ACTIVE_PACKET.md"):
+        if "next uncovered anchor" in files.get(path, ""):
+            errors.append(f"Sequential-next-anchor route restored: {path}")
+    anchors = files.get("qdi/DISCOVERY_ANCHORS.md", "")
+    if "**Ask:**" in anchors:
+        errors.append("Anchor wording is mandatory instead of adaptable")
+    if len(re.findall(r"^### \d{2} — ", anchors, flags=re.M)) != 33:
+        errors.append("Discovery coverage count changed")
+    return errors
+
+
 def route_errors(files):
     errors = []
     needed = set(BOOT + ["INSTALLATION_AND_STORAGE.md", "qdi/BRANCH_PLAN.md",
@@ -68,8 +126,8 @@ def route_errors(files):
     agent, router = files["AGENTS.md"], files["qdi/README.md"]
     if links(section(agent, "Boot route")) != [p for p in BOOT if p != "AGENTS.md"]:
         errors.append("Boot route/order changed or inactive context was added")
-    if sum(len(files[p].split()) for p in BOOT + ["INSTALLATION_AND_STORAGE.md"]) > 4200:
-        errors.append("First-session route exceeds 4,200 words")
+    if opening_word_count(files) > 4200:
+        errors.append("First-session route including opening/seed exceeds 4,200 words")
     rows = {}
     for row in section(router, "Phase routes").splitlines():
         cells = [v.strip() for v in row.split("|")]
@@ -187,6 +245,33 @@ class DistributionTests(unittest.TestCase):
     def test_routing_contract(self):
         self.assertEqual(route_errors(self.docs), [])
         self.assertEqual(sum(p.startswith("qdi/") for p in self.docs), 20)
+
+    def test_adaptive_discovery_contract(self):
+        self.assertEqual(adaptive_discovery_errors(self.docs), [])
+        self.assertLessEqual(opening_word_count(self.docs), 4200)
+
+    def test_adaptive_fault_injection(self):
+        mutations = [
+            ("collaboration choice", "qdi/DISCOVERY_ANCHORS.md", "D) **Challenge my existing plan**", "D) Agree with my plan"),
+            ("sequential routing", "qdi/ACTIVE_PACKET.md", "next\nconsequential question", "next uncovered anchor"),
+            ("mandatory question", "qdi/DISCOVERY_ANCHORS.md", "**Possible question:**", "**Ask:**"),
+            ("missing research level", "qdi/SIDEQUEST_TEMPLATE.md", "Research level:", "Search:"),
+            ("role grants authority", "qdi/DISCOVERY_ANCHORS.md", "Approach C is not that authorization", "Approach C authorizes all research"),
+            ("missing tool boundary", "qdi/DISCOVERY_ANCHORS.md", "If research tools are unavailable", "Always claim research is available"),
+            ("lost research return phase", "qdi/SIDEQUEST_TEMPLATE.md", "Saved phase:", "Unknown phase:"),
+            ("unbounded continuation", "qdi/SIDEQUEST_TEMPLATE.md", "At the boundary, stop and report", "Continue until every question is answered"),
+            ("lost preference on resume", "qdi/CURRENT_STATE.md", "Collaboration approach:", "Unrecorded preference:"),
+            ("accepting all unknowns", "qdi/DISCOVERY_ANCHORS.md", "Remaining uncertainties need an owner, impact, and gate", "Remaining uncertainty can be ignored"),
+            ("raw research preload", "qdi/DISCOVERY_ANCHORS.md", "not daily context", "mandatory daily context"),
+            ("cycle review waived", "qdi/CONTEXT_CLEANUP_CHECKPOINT.md", "Independent resumption review is required before cycle-level Owner Review", "Independent resumption review is optional before cycle-level Owner Review"),
+            ("self review inflated", "qdi/CONTEXT_CLEANUP_CHECKPOINT.md", "do not substitute self-review as an independent", "always label self-review as an independent"),
+        ]
+        for name, path, old, new in mutations:
+            with self.subTest(name=name):
+                changed = copy.copy(self.docs)
+                self.assertIn(old, changed[path])
+                changed[path] = changed[path].replace(old, new, 1)
+                self.assertTrue(adaptive_discovery_errors(changed))
 
     def test_routing_fault_injection(self):
         mutations = [

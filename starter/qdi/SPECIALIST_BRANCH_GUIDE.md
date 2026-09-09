@@ -10,6 +10,12 @@ This guide is not a second mandatory questionnaire. Use only the approved active
 branch. Every question must support its named decision, evidence need, boundary,
 test, or operating responsibility.
 
+Apply the [Discovery Anchors](DISCOVERY_ANCHORS.md) next-move and research rules within each branch.
+Research level and collaboration approach do not change branch authority.
+Credit supplied specifications and sourced answers; ask only consequential
+gaps. Do not require the human to answer technical questions the authorized
+evidence can resolve, or accept a supplied specification without checking risks.
+
 Begin each branch by completing its contract in `BRANCH_PLAN.md` and the active
 packet. End when the decision has sufficient evidence for convergence—not when
 every example below has been discussed.
@@ -331,4 +337,3 @@ When a branch closes:
 4. identify whether it changed another branch or anchor;
 5. reopen only the smallest affected boundary;
 6. continue with the next approved branch or begin convergence.
-

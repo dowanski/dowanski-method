@@ -6,15 +6,22 @@ person deciding what matters or reviewing what gets built.
 
 ## QDI: build understanding before building the product
 
-The agent begins with the human's own explanation and offers conversational
-questioning. The [33 Discovery Anchors](../starter/qdi/DISCOVERY_ANCHORS.md) are
-coverage responsibilities, not a mandatory questionnaire to repeat verbatim.
-Known answers count; relevant gaps create follow-ups.
+The agent first establishes how the human wants to collaborate, then
+receives their idea or existing plan. The
+[33 Discovery Anchors](../starter/qdi/DISCOVERY_ANCHORS.md) remain backstage
+coverage, not a questionnaire. Supplied context and research can answer several
+at once. The agent contributes observations and recommendations, not just prompts.
 
 Conditional lenses and specialist branches explore the work that the project
 actually requires. Research can interrupt discovery with a bounded sidequest,
 but it preserves an exact return point. The Discovery Ledger distinguishes
 accepted direction, observed facts, assumptions, inference, and uncertainty.
+
+Light Scan, Standard Research, and Deep Research describe evidence effort—not
+technical ability, QDI depth, or DM weight. Routine lookups can use existing
+bounded permission; dedicated investigations require accepted scope and a
+return point. The agent explains why research is or is not useful and recommends
+review when enough is known for the next bounded commitment.
 
 Convergence produces a Pre-Build Blueprint. The human reviews it, the context
 cleanup, and any remaining uncertainty before accepting a transition. Finishing
