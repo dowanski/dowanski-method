@@ -1,0 +1,42 @@
+name: Ask a question or share an experience
+description: Find your starting point, share what helped, or suggest an improvement.
+title: "[Conversation] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You do not need a finished project or a technical report to join the conversation. Questions, adaptations, and useful observations are welcome. This is a public discussion: leave out private conversations, client details, credentials, and internal paths. Use SECURITY.md's private reporting route for sensitive concerns.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What would you like to share?
+      options:
+        - A question about getting started or using the method
+        - Something I learned while trying it
+        - An idea for making it more useful
+    validations:
+      required: true
+  - type: textarea
+    id: conversation
+    attributes:
+      label: Your question or experience
+      description: What would help you move forward, what worked well, or what could be clearer?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version, if you have tried it
+      description: For example, v0.3.0. Leave blank if you are exploring first.
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional context
+      description: Share only what is useful and safe, such as your type of project, agent environment, or a file you are asking about.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before sharing
+      options:
+        - label: I have left out sensitive information and understand that this conversation will be public.
+          required: true

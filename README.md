@@ -2,9 +2,14 @@
 
 **From an idea to work an agent can follow—and a human can review.**
 
-A practical Markdown system for human-led, agent-assisted projects. Begin with
-QDI—Questions, Documentation, Implementation—then turn accepted discovery into
-the smallest sufficient documentation foundation for the work.
+A set of Markdown templates—plain-text files you and your AI agent can read and
+update—to help plan a project and keep its work organized. Explore the idea
+together, record the decisions that matter, and give each next step a clear
+purpose, boundary, and review point.
+
+Use it to shape an idea, plan a feature, or bring clearer direction to ongoing
+work. Start with QDI—Questions, Documentation, Implementation—then choose the
+smallest documentation foundation that fits your project.
 
 Built from Dowanski's working practice and shared so you can inspect it, adapt
 it, and improve your own workflow. It is a method to try, not a claim that every
@@ -54,6 +59,27 @@ Your idea → QDI discovery → accepted blueprint → bounded handoff
 - **Human accountability.** The agent must challenge drift, preserve
   uncertainty, and stop at the stated gates. Planning does not authorize action.
 
+<details>
+<summary>A conversation, not a questionnaire — see an example</summary>
+
+An illustrative exchange after the initial setup—not a provider recommendation
+or a result from a real project:
+
+> **You:** “I want to make booking easier for independent tutors and their
+> students. Tutors should approve a request before the booking is confirmed.”
+>
+> **Agent:** “You’ve given us a clear picture of who this is for and what you
+> want to make easier. Before we build, I’d suggest checking whether an existing
+> booking tool can support the approval process you have in mind. I can take a
+> quick, focused look and bring back a recommendation. Then we can decide together
+> whether to use what’s available, adapt it, or build something new. Would you
+> like me to explore that?”
+
+The agent builds on what you share, suggests useful research, and returns to
+the decision at hand. You choose the direction and approve the next step.
+
+</details>
+
 ## One start, three possible foundations
 
 | Foundation | Appropriate shape of work |
@@ -89,6 +115,17 @@ maintainer repository; use **Complete starter** for the ready-to-adopt packet.
 - [Inspect the discovery router](starter/qdi/README.md)
 - [Feedback and contribution boundaries](CONTRIBUTING.md)
 - [Security reporting](SECURITY.md)
+
+## Questions and experiences welcome
+
+Curious about where to start, or have you tried it on a project?
+[Ask a question or share what you learned](https://github.com/dowanski/dowanski-method/issues/new?template=experience.yml).
+Tell us what helped, what you adapted, or what could be clearer.
+[Report a specific problem](https://github.com/dowanski/dowanski-method/issues/new?template=problem.yml)
+when an instruction or file did not work as expected.
+
+These conversations are public. Keep private project details out; use
+[the private security route](SECURITY.md) for sensitive concerns.
 
 No service account, subscription, or runtime dependency is required to read the
 files. Your chosen agent and tools have their own access, availability, and

@@ -1,12 +1,14 @@
 # Feedback and Contributions
 
-This first edition is owner-maintained and issues-first. Thoughtful reports
-from actual use are welcome: a confusing route, a missing boundary, a template
-that creates unnecessary work, or a condition that suggests a better approach.
+The method is owner-maintained, with questions and feedback kept together in
+Issues. You can [ask a question or share an experience](https://github.com/dowanski/dowanski-method/issues/new?template=experience.yml),
+including what helped or what you adapted. To describe an instruction or file
+that did not work as expected, use [Report a problem](https://github.com/dowanski/dowanski-method/issues/new?template=problem.yml).
 
 Use the [Issues tab](https://github.com/dowanski/dowanski-method/issues) for non-sensitive feedback.
-Include the version, QDI phase or DM foundation, affected file, expected result,
-what happened, and a minimal sanitized example. Separate observations from
+For a problem report, include the version, QDI phase or DM foundation, affected
+file, expected result, what happened, and a minimal sanitized example. A general
+question does not require a completed project or technical report. Separate observations from
 preferences. Do not include private conversations, customer data, credentials,
 internal paths, or employer-owned material without permission.
 
