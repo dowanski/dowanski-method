@@ -26,6 +26,10 @@ remains available with its original downloads.
 
 ## Start here
 
+Want to see what the files become? **[Follow a small worked example](guides/worked-example.md)**
+from an idea to a recorded decision, a work packet, and a reviewed result.
+It is a fictional planning example, not a customer case study.
+
 If you are reading the source repository, open [the complete starter](starter/README.md).
 Keep it in a separate private folder or a deliberately isolated project path;
 do not replace an existing project's instructions. The
@@ -112,6 +116,7 @@ maintainer repository; use **Complete starter** for the ready-to-adopt packet.
 - [How the system fits together](guides/how-it-works.md)
 - [Installation, downloads, and storage](guides/getting-started.md)
 - [What has been tested—and what has not](guides/verification.md)
+- [A worked example: from an idea to a reviewed plan](guides/worked-example.md)
 - [Inspect the discovery router](starter/qdi/README.md)
 - [Feedback and contribution boundaries](CONTRIBUTING.md)
 - [Security reporting](SECURITY.md)
