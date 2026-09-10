@@ -17,8 +17,9 @@ the downloadable starter and its required reading path.
 > **You:** I want to make booking easier for independent tutors and their
 > students. A tutor should approve a request before it becomes a booking.
 >
-> **Agent:** Would you like me to guide you through it, work alongside you,
-> take the research and planning lead, or challenge a plan you already have?
+> **Agent:** How would you like to work together? A) Guide me through it;
+> B) Work alongside me; C) Take the research and planning lead; or
+> D) Challenge my existing plan.
 >
 > **You:** Work alongside me. One question at a time. For now, I want to work
 > out the flow without connecting to anything.
@@ -27,11 +28,12 @@ The agent already knows the intended audience and the importance of approval.
 It records that context rather than asking the human to repeat it. Discovery
 now focuses on a meaningful gap:
 
-> **Agent:** Then the first thing to make clear is the difference between
-> requesting a time and having it confirmed. Should a student ever see
-> “Booked” before the tutor has accepted?
+> **Agent:** I'll keep a request marked “Awaiting tutor approval” until the
+> tutor accepts. One choice we haven't covered: if the student changes their
+> mind while it is pending, should they be able to withdraw it?
 >
-> **You:** No. Until then, it should say “Awaiting tutor approval.”
+> **You:** Yes, they should be able to withdraw it before approval. That label
+> works for me too.
 
 The document is beginning to take shape through decisions, not through the
 number of questions answered.
@@ -57,6 +59,7 @@ An excerpt from **[DISCOVERY_LEDGER.md](../starter/qdi/DISCOVERY_LEDGER.md)**:
 |---|---|---|
 | OWNER_STATEMENT | The intended users are independent tutors and their students. | Treat as the owner's intended audience, not evidence of market demand. |
 | OWNER_CONFIRMED | A request is not a booking until the assigned tutor approves it. | Preserve this rule in the flow and acceptance criteria. |
+| OWNER_CONFIRMED | A student may withdraw their own pending request. | Include withdrawal without silently reopening a closed request. |
 | DEFERRED | Whether an existing provider meets the approval requirement is unknown. | Owner revisits before provider selection or integration; return to build versus adapt. |
 | OWNER_CONFIRMED | The next result is a local, fictional-data flow sheet only. | No customer information, accounts, messages, or external connections. |
 
